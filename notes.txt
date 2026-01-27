@@ -1,0 +1,6 @@
+1) switch the sections in history section
+2) replicate the header from index.html to 
+3) remove subheading and learn more button from index.html heading
+4) mobile view nav-bar button not there on every screen except index.html
+5) add remanining images
+6) resize images to be same size in each page

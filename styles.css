@@ -1,0 +1,310 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    background-color: #FFF1E6;
+    color: #2E2E2E;
+    line-height: 1.7;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #0F4C5C;
+}
+
+h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #E36414;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #E36414;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        rgba(15,76,92,0.8),
+        rgba(15,76,92,0.8)
+    ), url('hero-placeholder.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: #FFF1E6;
+}
+
+.hero p {
+    color: #F4A261;
+    font-size: 1.1rem;
+}
+
+/* Info Cards */
+.info-card {
+    background: white;
+    border-left: 6px solid #E36414;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.image-card {
+  display: flex;
+  align-items: center;      /* vertically aligns image with text */
+  justify-content: center;
+}
+
+.image-card img {
+  max-height: 220px;        /* adjust if your text is taller/shorter */
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+/* Highlight Boxes */
+.highlight-box {
+    background: #0F4C5C;
+    color: #FFF1E6;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.highlight-box strong {
+    color: #F4A261;
+}
+
+/* Small Dense Text */
+.dense-text {
+    font-size: 1.05rem;
+}
+
+/* Section Dividers */
+.section-divider {
+    height: 5px;
+    width: 80px;
+    background-color: #E36414;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0F4C5C;
+    color: #FFF1E6;
+    padding: 15px;
+}
+
+/* Buttons */
+.btn-accent {
+    background-color: #E36414;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-accent:hover {
+    background-color: #F4A261;
+}
+
+/* Timeline grid */
+.timeline-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Timeline card */
+.timeline-item {
+    background: #FFF3E0;
+    padding: 1.4rem;
+    border-radius: 16px;
+    border-top: 6px solid #FF7A00;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Hover (non-expanded) */
+.timeline-item:hover:not(.expanded) {
+    transform: scale(1.05);
+}
+
+/* Expanded state */
+.timeline-item.expanded {
+    grid-column: 1 / -1; /* take full row */
+    transform: scale(1);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+    background: #FFE0B2;
+    z-index: 3;
+}
+
+/* Text scaling */
+.timeline-item.expanded .timeline-text {
+    font-size: 1.05rem;
+}
+
+/* Year */
+.timeline-year {
+    font-weight: 700;
+    color: #C2410C;
+    margin-bottom: 0.5rem;
+}
+
+/* Hidden image container */
+.timeline-image {
+    margin-top: 1.2rem;
+    display: none;
+}
+
+/* Reveal image when expanded */
+.timeline-item.expanded .timeline-image {
+    display: block;
+}
+
+/* Image styling */
+.timeline-image img {
+    width: 100%;
+    border-radius: 12px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .timeline-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Expansion slot */
+.timeline-expand-slot {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #FFE0B2;
+    border-radius: 18px;
+    border-top: 6px solid #FF7A00;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* Expanded content */
+.expanded-content span {
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #C2410C;
+}
+
+.expanded-content p {
+    font-size: 1.05rem;
+    margin: 1rem 0;
+}
+
+.expanded-content img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+/* Dim the active card in grid */
+.timeline-item.active {
+    opacity: 0.35;
+    pointer-events: none; /* prevents clicking ghost card */
+}
+
+/* Make expanded slot clickable */
+.timeline-expand-slot {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.timeline-expand-slot:hover {
+    transform: scale(1.01);
+}
+
+/* Optional close hint */
+.expanded-hint {
+    font-size: 0.85rem;
+    color: #6B3A00;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+/* Image placeholder */
+.image-slot {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #FFD8A8, #FFE8CC);
+    border-radius: 14px;
+    margin-top: 1rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8B2E00;
+}
+
+.sub-section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #C2410C;
+}
+
+/* Dropdown container */
+.tech-dropdown {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #FFF3E0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Dropdown button */
+.tech-toggle {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #FF7A00;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.tech-content {
+    display: none;
+    padding: 1.5rem;
+}
+
+/* Active dropdown */
+.tech-dropdown.active .tech-content {
+    display: block;
+}
+
+.dense-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
