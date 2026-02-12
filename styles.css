@@ -92,7 +92,7 @@ h3, h4, h5 {
 /* Section Dividers */
 .section-divider {
     height: 5px;
-    width: 80px;
+    width: 90%;
     background-color: #E36414;
     margin: 20px auto;
 }
@@ -307,4 +307,55 @@ footer {
 .img-fluid {
     width: 100%;
     height: auto;
+}
+
+/* ===== Figure Cards ===== */
+.figure-img-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: #eaeaea;
+  border-radius: 12px;
+}
+
+.figure-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Interview Section ===== */
+.interview-img-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #eaeaea;
+  border-radius: 16px;
+}
+
+.interview-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.interview-text {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.interview-img {
+  width: 100%;
+  height: 300px;          /* Same height as before */
+  object-fit: cover;      /* Prevents distortion */
+  border-radius: 16px;    /* Same rounded corners */
+  display: block;
+}
+
+.figure-img {
+  width: 100%;
+  height: 180px;          /* Same height as original placeholder */
+  object-fit: cover;      /* Prevents stretching */
+  border-radius: 12px;    /* Matches previous design */
+  display: block;
+}
+
+.blockquote-footer{
+    color: #b8b8b8;
 }
