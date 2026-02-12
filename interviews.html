@@ -14,46 +14,149 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Mridangam</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
-        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
-        <li class="nav-item"><a class="nav-link" href="interviews.html">Figures</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Mridangam</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+            <li class="nav-item"><a class="nav-link" href="interviews.html">Figures</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+
+<!-- ====== MRIDANGISTS SECTION ====== -->
 <section class="container py-5">
-  <h2 class="text-center mb-4">Interviews & Personal Anecdotes</h2>
+  <div class="text-center mb-5">
+  <h2 class="fw-bold section-title">Legendary Mridangists</h2>
+  <div class="section-divider mx-auto"></div>
+</div>
+
+  <div class="row g-4">
+
+    <!-- Artist 1 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaDiP1p3VBRCNhkZyFB_nQTKePmlCxQhfFg&s"
+     alt="placeholder"
+     class="figure-img mb-3">
+        <h4 class="fw-bold">Palghat Mani Iyer</h4>
+        <p class="figure-text">
+          A revolutionary mridangist known for elevating the instrument to solo prominence in Carnatic concerts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Artist 2 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="https://th-i.thgim.com/public/latest-news/yak94c/article70396000.ece/alternates/FREE_1200/Umayalpuram.jpg"
+     alt="placeholder"
+     class="figure-img mb-3">
+        <h4 class="fw-bold">Umayalpuram K. Sivaraman</h4>
+        <p class="figure-text">
+          Celebrated for his precision, tonal clarity, and scientific approach to mridangam acoustics.
+        </p>
+      </div>
+    </div>
+
+    <!-- Artist 3 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="https://www.mylaporetimes.com/wp-content/uploads/2024/12/MT-SRUTI-BOOK-348x215.jpg"
+     alt="placeholder"
+     class="figure-img mb-3">
+        <h4 class="fw-bold">Palani Subramania Pillai</h4>
+        <p class="figure-text">
+          Known for powerful gumki techniques and a distinctive tonal depth that influenced generations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Artist 4 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="https://darbar.org/wp-content/smush-webp/2025/05/Dr-Trichy-Sankaran-Mridangam-Darbar-Festival-2018-Milton-Court-Barbican-Centre-scaled.jpg.webp"
+     alt="placeholder"
+     class="figure-img mb-3">
+        <h4 class="fw-bold">Trichy Sankaran</h4>
+        <p class="figure-text">
+          An international ambassador of Carnatic percussion and educator shaping global appreciation.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== INTERVIEWS SECTION (STACKED + SECOND MIRRORED) ====== -->
+<section class="container py-5">
+  <div class="text-center mb-5">
+  <h2 class="fw-bold section-title">Interviews & Reflections</h2>
+  <div class="section-divider mx-auto"></div>
+</div>
 
   <!-- Interview 1 -->
-  <div class="row mb-5">
-    <div class="col-md-4">
-      <img src="your-interview-image1.jpg" class="img-fluid rounded" alt="Interview 1">
+  <div class="row align-items-center mb-5">
+
+    <!-- Image -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="images/interview1.png"
+     alt="placeholder"
+     class="interview-img">
     </div>
-    <div class="col-md-8">
-      <h5>Interview with Person A</h5>
-      <p>"This instrument is not just music — it's emotion in every beat."</p>
-      <p>— Person A, Mridangam artist</p>
+
+    <!-- Text -->
+    <div class="col-md-6">
+      <blockquote class="blockquote">
+        <p class="interview-quote">
+          “When it comes to Carnatic music, it is one of the only forms of music that we worship. We see divinity in our music.”
+        </p>
+        <footer class="blockquote-footer mt-2">
+          Excerpt from the interview, where Niranjan talks about how mainstream music is designed to be commerical.
+        </footer>
+      </blockquote>
+
+      <p class="interview-text mt-3">
+        Niranjan Ravichandran talks about his experiences of learning and performing the Mridangam in the United States, as well as how he is connected to his roots through Carnatic music.
+      </p>
     </div>
+
   </div>
 
-  <!-- Interview 2 -->
-  <div class="row mb-5">
-    <div class="col-md-4">
-      <img src="your-interview-image2.jpg" class="img-fluid rounded" alt="Interview 2">
+  <!-- Interview 2 (Mirrored) -->
+  <div class="row align-items-center">
+
+    <!-- Image (comes second on md screens because mirrored) -->
+    <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+      <img src="images/interview2.png"
+     alt="placeholder"
+     class="interview-img">
     </div>
-    <div class="col-md-8">
-      <h5>Interview with Person B</h5>
-      <p>"Growing up, it was the rhythm of my home… it shaped my identity."</p>
-      <p>— Person B, Mridangam student</p>
+
+    <!-- Text -->
+    <div class="col-md-6 order-md-1">
+      <blockquote class="blockquote">
+        <p class="interview-quote">
+          “My father said, "If you want to be like them (his Mridangist idols), then why don't you teach?" When he asked me that question, I was pleasantly surprised.”
+        </p>
+        <footer class="blockquote-footer mt-2">
+          Excerpt from the interview with my guru, Shri Shankarnarayan sir talks about how he started his teaching journey.
+        </footer>
+      </blockquote>
+
+      <p class="interview-text mt-3">
+        Shankarnarayan Subramanian sir talks about how playing Mridangam has influenced his whole life and his journney as a Mridangam vidhwan and guru.
+      </p>
     </div>
+
   </div>
 
-  <p class="text-muted">Add your own anecdotes and future interviews here.</p>
 </section>
 
 <footer class="text-center py-3 bg-light">
